@@ -17,7 +17,7 @@ nav {
 
 }
 .head{
-	    width: 978px;
+	width: 978px;
 }
 .topnav{
 	display:flex;
@@ -25,24 +25,24 @@ nav {
 	align-items:center;
 	position:fixed;
 	z-index:3;
-	
+
 }
 .menu a{
 	margin:0px 20px;
-	   
+
 }
-.menu{ 
-    float: right;
-	    padding-top: 30px;
+.menu{
+	float: right;
+	padding-top: 30px;
 }
 .glogo{
-	    display: inline;
+	display: inline;
 }
 .menu .topmenu:hover{
 	border-bottom:#2f3942 2px solid;
 }
 
-	
+
 
 .topmenu{
 	color:#FFFFFF;
@@ -65,7 +65,7 @@ nav {
 		font-size:48px;
 		display:block;
 		width:100%;
-		    z-index: 3;
+		z-index: 3;
 	}
 }
 .projects{
@@ -73,13 +73,33 @@ nav {
 	justify-content:space-between;
 	position:relative;
 	top:150px;
-	    width: 978px;
-    margin: 0 auto;
+	max-width: 978px;
+	margin: 0 auto;
 	border-bottom:1px solid #e8e8e8;
-	
-	
-	
+	width:100%;
+
+
 }
+@media screen and (max-width:970px){
+	.projects{
+		flex-wrap:wrap;
+		width:50%;
+	}
+
+}
+@media screen and (max-width:970px){
+	.news{
+		flex-wrap:wrap;
+		justify-content: center;
+
+	}
+	.blog{
+		margin-right:1%;
+
+	}
+
+}
+
 .foto{
 	border:1px #f2f2f2 solid;
 	box-shadow: 0 1px 1px 1px #d9d9d9 ;
@@ -96,7 +116,7 @@ nav {
 	font-size:20px;
 	color:#297e39;
 	padding-right: 5px;
-	
+
 }
 .text{
 	font-size:20px;
@@ -112,30 +132,30 @@ nav {
 }
 .news{
 	display:flex;
-		position:relative;
+	position:relative;
 	top:200px;
-	    width: 978px;
-    margin: 0 auto;
-	    border-bottom: 1px solid #e8e8e8;
-	
+	max-width: 978px;
+	margin: 0 auto;
+	border-bottom: 1px solid #e8e8e8;
+	width:100%;
+
 }
 .blog{
 	width:50%;
 	flex-direction: column;
-    display: flex;
+	display: flex;
+
 }
 .news i{
-	
 	margin-bottom:20px;
-	margin-left:10px;
 	font-size:20px;
 	padding-right: 5px;
-	 
-	
+
+
 }
 .blogfoto img{
-	 float:left;
-	 margin-right:20px;
+	float:left;
+	margin-right:20px;
 }
 
 h1{
@@ -156,6 +176,7 @@ h2{
 }
 .href2{
 	color:#3e95d2;
+	line-height: 4;
 }
 .href3{
 	color:#3f97d3;
@@ -168,14 +189,14 @@ h2{
 	color:#8a8a8a;
 }
 footer{
-	    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 .icon{
 	font-size:28px;
 	padding-right: 10px;
 	text-decoration:none;
-	
+
 }
 a{
 	text-decoration:none;
